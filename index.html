@@ -21,7 +21,14 @@
 </head>
 
 <body>
+    <!--========== CURSOR ==========-->
+    <div class="cursor"></div>
+
     <!--========== SIDEBAR ==========-->
+    <div class="nav__toggle" id="nav-toggle">
+        <i class="uil uil-bars"></i>
+    </div>
+
     <aside class="sidebar" id="sidebar">
         <nav class="nav">
             <div class="nav__logo">
@@ -54,6 +61,10 @@
 
             <div class="btn__share">
                 <i class="uil uil-share-alt social__share"></i>
+            </div>
+
+            <div class="nav__close" id="nav-close">
+                <i class="uil uil-times"></i>
             </div>
         </nav>
     </aside>
@@ -377,16 +388,16 @@
             <h2 data-heading="My Portfolio" class="section__title">Recent Works</h2>
 
             <div class="work__filters">
-                <span class="work__item active-work">All</span>
-                <span class="work__item">Logos</span>
-                <span class="work__item">Youtube Banners</span>
-                <span class="work__item">Posters</span>
-                <span class="work__item">Logo Intro</span>
-                <span class="work__item">Stream Pack</span>
+                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item" data-filter=".logos">Logos</span>
+                <span class="work__item" data-filter=".youtube_banners">Youtube Banners</span>
+                <span class="work__item" data-filter=".poster">Posters</span>
+                <span class="work__item" data-filter=".logo-intro">Logo Intro</span>
+                <span class="work__item" data-filter=".stream_pack">Stream Pack</span>
             </div>
 
             <div class="work__container container grid">
-                <div class="work__card">
+                <div class="work__card mix poster">
                     <img src="./assets/img/work-1-1.webp" alt="" class="work__img">
                     <h3 class="work__title"></h3>
                     <span class="work__button">Demo
@@ -404,7 +415,7 @@
                     </div>
                 </div>
 
-                <div class="work__card">
+                <div class="work__card mix youtube_banners">
                     <img src="./assets/img/work-2-2.webp" alt="" class="work__img">
                     <h3 class="work__title"></h3>
                     <span class="work__button">Demo
@@ -422,7 +433,7 @@
                     </div>
                 </div>
                 
-                <div class="work__card">
+                <div class="work__card mix logos">
                     <img src="./assets/img/work-1-1.webp" alt="" class="work__img">
                     <h3 class="work__title"></h3>
                     <span class="work__button">Demo
@@ -440,7 +451,7 @@
                     </div>
                 </div>
 
-                <div class="work__card">
+                <div class="work__card mix logos">
                     <img src="./assets/img/work-2-2.webp" alt="" class="work__img">
                     <h3 class="work__title"></h3>
                     <span class="work__button">Demo
@@ -458,7 +469,7 @@
                     </div>
                 </div>
 
-                <div class="work__card">
+                <div class="work__card mix poster">
                     <img src="./assets/img/work-1-1.webp" alt="" class="work__img">
                     <h3 class="work__title"></h3>
                     <span class="work__button">Demo
@@ -476,7 +487,7 @@
                     </div>
                 </div>
 
-                <div class="work__card">
+                <div class="work__card mix youtube_banners">
                     <img src="./assets/img/work-2-2.webp" alt="" class="work__img">
                     <h3 class="work__title"></h3>
                     <span class="work__button">Demo
@@ -493,12 +504,33 @@
                         </ul>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <!-- Portfolio Popup -->
-        
+        <div class="portfolio__popup">
+            <div class="portfolio__popup-inner">
+                <div class="portfolio__popup-content grid">
+                    <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp__thumbnail">
+                        <img src="./assets/img/work-2-2.webp" alt="" class="portfolio__popup-img">
+                    </div>
+                    <div class="portfolio__popup-info">
+                        <div class="portfolio__popup-subtitle">Featured - <span>Design</span></div>
+                        <div class="portfolio__popup-body">
+                            <h3 class="details__title">App for technology</h3>
+                            <p class="details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore reiciendis eum aspernatur nulla nisi assumenda.</p>
+                            <ul class="details__info">
+                                <li>Created - <span>4 dec 2020</span></li>
+                                <li>Tools - <span>html css</span></li>
+                                <li>View - <span><a href="#">www.instagram.com</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--===== Services =====-->
         <section class="services section" id="services">
             <h2 data-heading="Services" class="section__title">What I Offer</h2>
@@ -755,13 +787,13 @@
     
 
     <!--========== MIXITUP FILTER ==========-->
-    <script src="assets/js/mixitup.min.js"></script>
+    <script src="./assets/js/mixitup.min.js"></script>
 
     <!--========== SWIPER JS ==========-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
 
     <!--========== MAIN JS ==========-->
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
