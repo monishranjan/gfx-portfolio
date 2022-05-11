@@ -201,18 +201,18 @@ button, input {
     top: 1.8rem;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    /* border-radius: 50%;
     background-color: var(--skin-color);
-    text-align: center;
+    text-align: center; */
     margin: auto;
 }
 
-.nav__logo-text {
+/* .nav__logo-text {
     font-size: 1.125rem;
     color: var(--title-color);
     font-weight: var(--font-bold);
     line-height: 40px;
-}
+} */
 
 .nav__menu {
     position: fixed;
@@ -369,6 +369,62 @@ button, input {
 
 .home__title {
     font-size: var(--biggest-font-size);
+}
+.wrapper{
+    display: flex;
+}
+.wrapper {
+    display: inline-flex;
+}
+
+.wrapper .static-title {
+    color: var(--title-color);
+    font-size: 55px;
+    font-weight: 400;
+}
+
+.wrapper .dynamic-subtitle {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-subtitle li {
+    color: var(--skin-color);
+    list-style: none;
+    font-size: 55px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
+
+.dynamic-subtitle li span {
+    position: relative;
+}
+
+.dynamic-subtitle li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 105%;
+    width: 100%;
+    background: var(--box-color);
+    border-left: 2px solid var(--skin-color);
+    animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
 }
 
 .home__subtitle {
