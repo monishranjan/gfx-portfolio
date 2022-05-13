@@ -7,7 +7,7 @@
 
     $mailheader = "From:".$name."<".$email.">\r\n";
 
-    $recipient = "bihariggaming@gmail.com";
+    $recipient = "monishranjan@outlook.com";
 
     mail($recipient, $subject, $message, $mailheader)
     or die("Error!");
@@ -21,27 +21,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--========== UNICONS ==========-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.    0/css/line.css">
-    
+
         <!--========== BOXICONS ==========-->
         <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"  rel="stylesheet">
-    
+
         <!--========== SWIPER CSS ==========-->
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    
+
         <!--========== MAIN CSS ==========-->
         <link rel="stylesheet" href="assets/css/style.css">
-    
+
         <title>Contact Page</title>
     </head>
     <body>
         <!--========== CURSOR ==========-->
         <div class="cursor"></div>
-    
+
         <!--========== SIDEBAR ==========-->
         <div class="nav__toggle" id="nav-toggle">
         <i class="uil uil-bars"></i>
         </div>
-    
+
         <aside class="sidebar" id="sidebar">
         <nav class="nav">
             <div class="nav__logo">
@@ -82,7 +82,7 @@
             </div>
         </nav>
         </aside>
-    
+
         <!--========== Main ==========-->
         <main class="main">
             <!--========== Home ==========-->
@@ -143,7 +143,7 @@
                 </div>
             </div>
             </section>
-    
+
             <!--===== FOOTER =====-->
             <footer class="footer">
             <div class="footer__bg">
@@ -182,13 +182,13 @@
             </div>
             </footer>
         </main>
-    
+
         <!--========== MIXITUP FILTER ==========-->
         <script src="./assets/js/mixitup.min.js"></script>
-    
+
         <!--========== SWIPER JS ==========-->
         <script src="./assets/js/swiper-bundle.min.js"></script>
-    
+
         <!--========== MAIN JS ==========-->
         <script src="./assets/js/main.js"></script>
     </body>
